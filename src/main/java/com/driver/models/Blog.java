@@ -12,7 +12,7 @@ public class Blog {
     private int id;
     private String title;
     private String content;
-    private Date publishDate;
+    private Date pubDate;
 
     @ManyToOne
     @JoinColumn
@@ -27,7 +27,7 @@ public class Blog {
     public Blog(String title, String content, Date pubDate, User user) {
         this.title = title;
         this.content = content;
-        this.publishDate = pubDate;
+        this.pubDate = pubDate;
         this.user = user;
     }
 
@@ -55,12 +55,12 @@ public class Blog {
         this.content = content;
     }
 
-    public Date getPublishDate() {
-        return publishDate;
+    public Date getPubDate() {
+        return pubDate;
     }
 
-    public void setPublishDate(Date publishDate) {
-        this.publishDate = publishDate;
+    public void setPubDate(Date pubDate) {
+        this.pubDate = pubDate;
     }
 
     public User getUser() {
